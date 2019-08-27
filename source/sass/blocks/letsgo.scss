@@ -1,0 +1,17 @@
+.letsgo {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.letsgo__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 47px 19px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white-three;
+
+  background-color: $light-grey-blue;
+}
