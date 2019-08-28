@@ -1,9 +1,15 @@
+$grey-blue: #669ec0;
 $light-grey-blue: #81b3d2;
+$dark-grey-blue: #5496bd;
+$brown: #766357;
 $white-three: #ffffff;
+$black: #000000;
 
 body {
   font-family: "PTSans", "Arial", sans-serif;
   font-size: 18px;
+
+  background-color: #f2f2f2;
 }
 
 html {
@@ -35,4 +41,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: $white-three;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }

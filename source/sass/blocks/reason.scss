@@ -1,4 +1,36 @@
 .reason {
+  &--one {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -19px;
+
+      height: 20px;
+
+      background-image: url("../img/bg-intro-triangle-mobile-blue.svg");
+      background-size: cover;
+
+      @include tablet {
+        content: none;
+
+        height: 57px;
+
+        background-image: url("../img/bg-intro-triangle-tablet.svg");
+      }
+
+      @include desktop {
+        height: 57px;
+
+        background-image: url("../img/bg-intro-triangle-desktop.svg");
+      }
+    }
+  }
+
   @include tablet {
     display: flex;
   }
@@ -12,7 +44,7 @@
 
 .reason__desk {
   flex-grow: 1;
-  padding: 25px;
+  padding: 40px 25px;
 
   text-align: center;
   color: $white-three;
@@ -31,9 +63,16 @@
   &--no-photo {
     position: relative;
 
+    padding: 27px 31px;
+
     color: #000000;
 
     background-color: #efefef;
+
+    @include tablet {
+      width: 33.3%;
+      padding: 46px 49px;
+    }
 
     &::after {
       content: "";
@@ -57,19 +96,37 @@
 
 .reason__title {
   margin: 0;
+  margin-bottom: 7px;
 
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
+
+  @include tablet {
+    font-size: 21px;
+
+    br {
+      display: initial;
+    }
+  }
 }
 
 .reason__number,
 .reason__text {
   margin: 0;
+  margin-top: 16px;
 
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @include tablet {
+    margin-top: 20px;
+  }
 }
 
 .reason__photo {
@@ -91,6 +148,16 @@
   @include desktop {
     width: 800px;
     height: 256px;
+  }
+
+  picture {
+    display: block;
+
+    height: 260px;
+
+    @include tablet {
+      height: 256px;
+    }
   }
 }
 
