@@ -74,6 +74,10 @@
       padding: 46px 49px;
     }
 
+    @include desktop {
+      padding-bottom: 67px;
+    }
+
     &::after {
       content: "";
 

@@ -8,6 +8,7 @@
   background-color: #d6e7f0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
+  background-repeat: no-repeat;
   background-size: cover;
 
   @include tablet {
@@ -26,6 +27,13 @@
     @include retina {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+
+  &--gallery {
+    height: 158px;
+
+    background-position: center bottom;
+    background-size: initial;
   }
 
   &::after {
@@ -66,10 +74,14 @@
   }
 }
 
+.intro__img-sedona {
+  margin-top: 52px;
+}
+
 .intro__title-wrapper {
   max-width: 730px;
   margin: 0 auto;
-  padding: 41px 10%;
+  padding: 41px 7%;
 
   text-align: center;
 

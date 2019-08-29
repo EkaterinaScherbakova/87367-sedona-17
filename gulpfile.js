@@ -7,6 +7,9 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var svgstore = require("gulp-svgstore");
+var cheerio = require("gulp-cheerio");
+var rename = require("gulp-rename");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -21,6 +24,24 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("svg-sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('svg').attr('style', 'display: none;');
+      },
+      parserOptions: {
+        xmlMode: true
+      }
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest("source/img"))
+    .pipe(server.stream());
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -31,7 +52,8 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("svg-sprite"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("css", "svg-sprite", "server"));

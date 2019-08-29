@@ -4,6 +4,10 @@
   @include tablet {
     padding: 0;
   }
+
+  @include desktop {
+    padding-bottom: 22px;
+  }
 }
 
 .features__list {
