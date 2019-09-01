@@ -9,12 +9,6 @@
 </head>
 
 <body>
-  <svg style="display: none;">
-    <symbol viewBox="0 0 16 16" id="icon-login">
-      <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
-      <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
-    </symbol>
-  </svg>
   <div class="main-wrapper">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
@@ -33,7 +27,7 @@
             <a href="#" class="main-nav__item">Фото и видео</a>
           </li>
           <li class="main-nav__item-wrapper">
-            <a href="#" class="main-nav__item">Форма отзыва</a>
+            <a href="form.html" class="main-nav__item">Форма отзыва</a>
           </li>
           <li class="main-nav__item-wrapper">
             <a href="#" class="main-nav__item">HTML Academy</a>
@@ -50,85 +44,105 @@
             <img src="img/text-sedona.svg" width="229" height="39" class="intro__img-sedona" alt="Седона">
           </picture>
         </div>
-        <div class="intro__title-wrapper">
+        <div class="intro__title-wrapper intro__title-wrapper--gallery">
           <h1 class="intro__title">Фото и видео</h1>
-          <p class="intro__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="intro__desc intro__desc--gallery">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фото</h2>
-        <ul classs="photo__list">
+        <ul class="photo__list">
           <li class="photo__item">
-            <a>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280"
-                  alt="Неродные просторы">
-              </picture>
-            </a>
-            <div class="photo__desk">
-              <h3>Неродные просторы</h3>
-              <span class="photo__autor">Автор фото: Борис</span>
-              <div class="photo__like">
-                <button type="button" class="photo__like-btn">1350</button>
+            <div class="photo__item-wrapper">
+              <a>
+                <picture class="photo__picture photo__picture--one">
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280"
+                  class="photo__img photo__img--one" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="photo__desc">
+                <div class="photo__title-wrapper">
+                  <h3 class="photo__title">Неродные просторы</h3>
+                  <span class="photo__autor">Автор фото: Борис</span>
+                </div>
+                <div class="photo__like">
+                  <button type="button" class="photo__btn">1350</button>
+                </div>
               </div>
             </div>
           </li>
           <li class="photo__item">
-            <a>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280"
-                  alt="Неродные просторы">
-              </picture>
-            </a>
-            <div class="photo__desk">
-              <h3>Местная растительность</h3>
-              <span class="photo__autor">Автор фото: Борис</span>
-              <div class="photo__like">
-                <button type="button" class="photo__like-btn">1350</button>
+            <div class="photo__item-wrapper">
+              <a>
+                <picture class="photo__picture">
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280"
+                  class="photo__img" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="photo__desc">
+                <div class="photo__title-wrapper">
+                  <h3 class="photo__title">Местная растительность</h3>
+                  <span class="photo__autor">Автор фото: Сергей</span>
+                </div>
+                <div class="photo__like">
+                  <button type="button" class="photo__btn">143</button>
+                </div>
               </div>
             </div>
           </li>
           <li class="photo__item">
-            <a>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280"
-                  alt="Неродные просторы">
-              </picture>
-            </a>
-            <div class="photo__desk">
-              <h3>Дорога на север</h3>
-              <span class="photo__autor">Автор фото: Борис</span>
-              <div class="photo__like">
-                <button type="button" class="photo__like-btn">1350</button>
+            <div class="photo__item-wrapper">
+              <a>
+                <picture class="photo__picture">
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" class="photo__img" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="photo__desc">
+                <div class="photo__title-wrapper">
+                  <h3 class="photo__title">Дорога на север</h3>
+                  <span class="photo__autor">Автор фото: Петр</span>
+                </div>
+                  <div class="photo__like">
+                  <button type="button" class="photo__btn">256</button>
+                </div>
               </div>
             </div>
           </li>
           <li class="photo__item">
-            <a>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280"
-                  alt="Неродные просторы">
-              </picture>
-            </a>
-            <div class="photo__desk">
-              <h3>Мост дьявола</h3>
-              <span class="photo__autor">Автор фото: Борис</span>
-              <div class="photo__like">
-                <button type="button" class="photo__like-btn">1350</button>
+            <div class="photo__item-wrapper">
+              <a>
+                <picture class="photo__picture">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280"
+                  class="photo__img" alt="Неродные просторы">
+                </picture>
+              </a>
+              <div class="photo__desc">
+                <div class="photo__title-wrapper">
+                  <h3 class="photo__title">Мост дьявола</h3>
+                  <span class="photo__autor">Автор фото: Антон</span>
+                </div>
+                  <div class="photo__like">
+                  <button type="button" class="photo__btn">94</button>
+                </div>
               </div>
             </div>
           </li>
         </ul>
       </section>
-
+      <section class="letsgo letsgo--gallery">
+        <h2 class="letsgo__title">Все еще сомневаетесь?</h2>
+        <p class="letsgo__text">
+            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+      </section>
     </main>
     <footer class="page-footer">
       <span class="page-footer__hashtag">#visitsedona</span>

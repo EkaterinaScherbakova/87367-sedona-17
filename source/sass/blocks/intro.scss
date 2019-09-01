@@ -30,10 +30,14 @@
   }
 
   &--gallery {
-    height: 158px;
+    height: 156px;
 
     background-position: center bottom;
     background-size: initial;
+
+    @include tablet {
+      background-size: cover;
+    }
   }
 
   &::after {
@@ -75,18 +79,26 @@
 }
 
 .intro__img-sedona {
-  margin-top: 52px;
+  margin-top: 50px;
 }
 
 .intro__title-wrapper {
   max-width: 730px;
   margin: 0 auto;
-  padding: 41px 7%;
+  padding: 40px 7.5%;
 
   text-align: center;
 
   @include tablet {
     padding: 52px 10%;
+  }
+
+  &--gallery {
+    padding-bottom: 28px;
+  }
+
+  &--form {
+    padding: 40px 7% 19px;
   }
 }
 
@@ -107,4 +119,9 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+
+  &--gallery,
+  &--form {
+    line-height: 23px;
+  }
 }

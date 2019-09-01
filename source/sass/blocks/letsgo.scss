@@ -10,6 +10,10 @@
   @include desktop {
     padding-bottom: 66px;
   }
+
+  &--gallery {
+    padding: 10px 25px 49px;
+  }
 }
 
 .letsgo__title {
