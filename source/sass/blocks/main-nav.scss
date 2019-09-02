@@ -110,14 +110,14 @@
     content: "";
 
     position: absolute;
-    top: 18px;
+    top: 17px;
     left: 12px;
 
     width: 23px;
     height: 4px;
 
     background-color: $light-grey-blue;
-    box-shadow: 0 9px 0 0 $light-grey-blue, 0 18px 0 0 $light-grey-blue;
+    box-shadow: 0 8px 0 0 $light-grey-blue, 0 17px 0 0 $light-grey-blue;
   }
 }
 
@@ -143,8 +143,8 @@
     content: "";
 
     position: absolute;
-    top: 14px;
-    left: 27px;
+    top: 15px;
+    left: 22px;
     height: 25px;
     width: 4px;
     background-color: $white-three;

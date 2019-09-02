@@ -68,21 +68,22 @@
             </label>
           </div>
           <div class="form__group">
-            <h2>Контактная информация:</h2>
+            <h2 class=" form__title">Контактная информация:</h2>
             <label class="form__label-base form__label-base--contacts">
-              Контактный телефон*:
+              <span class="form__contacts-span">Контактный телефон*:</span>
               <div class="form__input-wrapper form__input-wrapper--tel">
                 <input type="tel" name="phone" placeholder="Введите телефон" class="form__input-base form__input-base--contacts">
               </div>
             </label>
             <label class="form__label-base form__label-base--contacts">
-              Электронная почта*:
+              <span class="form__contacts-span">Электронная почта*:</span>
               <div class="form__input-wrapper form__input-wrapper--email">
                 <input type="email" name="email" placeholder="Введите e-mail" class="form__input-base form__input-base--contacts">
               </div>
             </label>
           </div>
           <div class="form__group">
+            <h2 class="form__title">Ваше общее впечатление:</h2>
             <label class="form__radio-label">
               <input type="radio" name="impression" value="good" class="visually-hidden">
               <span class="radio-indicator"></span>
@@ -100,6 +101,7 @@
             </label>
           </div>
           <div class="form__group">
+            <h2 class="form__title">посещенные достопримечательности:</h2>
             <label class="form__checkbox-label">
               <input type="checkbox" checked name="bridge" class="visually-hidden">
               <span class="checkbox-indicator"></span>
@@ -122,9 +124,11 @@
             </label>
           </div>
           <div class="form__group">
-            <h2>Опишите свои эмоции:</h2>
-            <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+            <h2 class="form__title">Опишите свои эмоции:</h2>
+            <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            <button type="submit" class="form__btn">Отправить отзыв</button>
           </div>
+
         </form>
       </section>
 

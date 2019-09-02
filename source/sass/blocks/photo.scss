@@ -94,6 +94,9 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
 
     background-color: #f2f2f2;
   }
@@ -110,14 +113,60 @@
   }
 }
 
+.photo__author {
+  color: #333333;
+
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.photo__like {
+  margin-top: 9px;
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
 .photo__title {
+  margin: 17px 0 7px;
+
   font-size: inherit;
   text-transform: uppercase;
+
+  @include tablet {
+    margin: 0 0 8px;
+  }
 }
 
 .photo__btn {
-  color: inherit;
+  position: relative;
 
+  height: 21px;
+  padding: 5px 5px 0 37px;
+
+  color: inherit;
+  font-weight: bold;
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
+  outline: none;
+
+  &:focus {
+    color: rgba(#000000, 0.3);
+  }
+}
+
+.photo__like-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  fill: rgba(#000000, 0.3);
+
+  @include desktop {
+    fill: #ffffff;
+  }
 }

@@ -1,0 +1,141 @@
+.player {
+
+}
+
+.player__screen {
+  padding-bottom: 62.8125%;
+
+  background-color: #cbe0a3;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url(../img/video-mobile@2x.jpg);
+  }
+
+  @include tablet {
+    padding-bottom: 77.006172839506173%;
+
+    background-image: url(../img/video-tablet@1x.jpg);
+
+    @include retina {
+      background-image: url(../img/video-tablet@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    padding-bottom: 62.5%;
+
+    background-image: url(../img/video-desktop@1x.jpg);
+
+    @include retina {
+      background-image: url(../img/video-desktop@2x.jpg);
+    }
+  }
+}
+
+.player__controls {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 66px;
+  width: 87.5%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+
+  @include tablet {
+    margin: -93px 0 0;
+
+    height: 93px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, .6)
+  }
+}
+
+.player__progress-bar {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 100%;
+  min-height: 45px;
+  background-color: rgba(0, 0, 0, .5);
+
+  @include tablet {
+    position: relative;
+    top: 0;
+
+    background-color: transparent;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    transform: translate(0, -50%);
+  }
+
+  &::before {
+    left: 22px;
+    right: 22px;
+
+    height: 4px;
+
+    background-color: rgba(255, 255, 255, .3);
+  }
+
+  &:after {
+    left: 30%;
+
+    width: 9px;
+    height: 10px;
+
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.player__control {
+  padding: 0;
+  border: 0;
+
+  font-size: 0;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &--replay {
+    margin-left: 24px;
+
+    @include tablet {
+      margin-left: 37px;
+    }
+  }
+
+  &--subtitles {
+    margin: 0 30px 0 auto;
+  }
+
+  &--fullscreen {
+    margin-right: 24px;
+
+    @include tablet {
+      margin-right: 37px;
+    }
+  }
+}
+
+.player__control svg {
+  fill: #5c6870;
+
+  @include tablet {
+    fill: #ffffff;
+  }
+}
