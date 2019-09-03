@@ -8,7 +8,7 @@
   }
 
   @include desktop {
-    padding: 72px 60px 66px;
+    padding: 69px 60px 66px;
   }
 }
 
@@ -24,6 +24,10 @@
     margin-bottom: 25px;
 
     font-size: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
   }
 }
 
@@ -43,7 +47,7 @@
   }
 
   @include desktop {
-    margin-bottom: 76px;
+    margin-bottom: 70px;
   }
 }
 

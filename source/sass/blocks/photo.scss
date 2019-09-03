@@ -11,6 +11,10 @@
 
     padding: 0 60px;
   }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .photo__item {
@@ -60,7 +64,7 @@
   }
 
   @include desktop {
-    height: 276px;
+    height: 268px;
   }
 
   &--one {
@@ -78,7 +82,7 @@
   }
 
   @include desktop {
-    height: 276px;
+    height: 268px;
   }
 
   &--one {

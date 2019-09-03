@@ -39,6 +39,10 @@
       height: 290px;
       background-size: cover;
     }
+
+    @include desktop {
+      height: 300px;
+    }
   }
 
   &::after {
@@ -82,11 +86,14 @@
 .intro__img-sedona {
   margin-top: 50px;
 
-  &--gallery {
-    @include tablet {
-      width: 460px;
-      margin-top: 97px;
-    }
+  @include tablet {
+    width: 460px;
+    height: 80px;
+    margin-top: 95px;
+  }
+
+  @include desktop {
+    margin-top: 101px;
   }
 }
 
@@ -101,18 +108,30 @@
     padding: 52px 10%;
   }
 
+  @include desktop {
+    padding: 52px 7%;
+  }
+
   &--gallery {
     max-width: 600px;
     padding-bottom: 28px;
 
     @include tablet {
       padding-top: 76px;
-      padding-bottom: 70px;
+      padding-bottom: 71px;
+    }
+
+    @include desktop {
+      padding-top: 114px;
     }
   }
 
   &--form {
     padding: 40px 7% 19px;
+
+    @include tablet {
+      padding: 74px 19% 19px;
+    }
   }
 }
 
@@ -127,6 +146,13 @@
   }
 
   &--gallery {
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--form {
     @include tablet {
       font-size: 30px;
       margin-bottom: 32px;
