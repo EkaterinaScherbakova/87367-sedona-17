@@ -1,0 +1,61 @@
+.suggestion {
+  padding: 38px 0 40px 0;
+
+  text-align: center;
+
+  @include tablet {
+    padding: 64px 60px 39px;
+  }
+
+  @include desktop {
+    padding: 69px 60px 66px;
+  }
+}
+
+.suggestion__title {
+  max-width: 280px;
+  margin: 0 auto 28px;
+
+  font-size: 18px;
+  text-transform: uppercase;
+
+  @include tablet {
+    max-width: 415px;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+  }
+}
+
+.suggestion__text {
+  max-width: 270px;
+  margin: 0 auto 34px;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #333333;
+
+  @include tablet {
+    max-width: 440px;
+    margin: 0 auto 75px;
+  }
+
+  @include desktop {
+    margin-bottom: 70px;
+  }
+}
+
+.suggestion__player {
+  max-width: 800px;
+  margin: 0 auto;
+
+  @include desktop {
+    margin-bottom: 19px;
+  }
+}

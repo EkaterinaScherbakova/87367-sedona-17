@@ -1,0 +1,485 @@
+.form__inner {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__group {
+  position: relative;
+  padding: 1px 20px 7px;
+
+  @include tablet {
+    width: 100%;
+    padding: 0 60px 7px;
+  }
+
+  @include desktop {
+    padding: 0 120px 7px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: block;
+    height: 1px;
+
+    background-color: #f2f2f2;
+
+    @include tablet {
+      top: 17px;
+      left: 60px;
+      right: 60px;
+      background-color: initial;
+      background-image: linear-gradient(90deg, #dcdcdc 20%, transparent 20%, transparent 80%, #dcdcdc 80%);
+    }
+
+    @include desktop {
+      left: 120px;
+      right: 120px;
+      background-image: linear-gradient(90deg, #dcdcdc 30%, transparent 30%, transparent 70%, #dcdcdc 70%);
+    }
+  }
+
+  &--impression {
+    order: -1;
+
+    @include tablet {
+      width: 50%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      padding-right: 50px;
+
+      &::before {
+        left: initial;
+        right: 0;
+        bottom: 35px;
+        width: 1px;
+        height: initial;
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  &--introduce {
+    @include tablet {
+      width: 50%;
+      margin-top: 50px;
+      margin-bottom: 37px;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    @include desktop {
+      padding-left: 79px;
+    }
+  }
+
+  &--sights {
+    @include tablet {
+      padding-bottom: 27px;
+
+      &::before {
+        top: 43px;
+      }
+
+      .form__group-inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin: 0 95px;
+
+        @include desktop {
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+
+  &--emotions {
+    &::before {
+      top: 36px;
+    }
+  }
+}
+
+.form__label-base {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &--contacts {
+    flex-wrap: wrap;
+
+    @include desktop {
+      width: 50%;
+    }
+  }
+}
+
+.form__row {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__input-base {
+  display: inline-block;
+  flex-grow: 1;
+  margin-left: 14px;
+  padding: 0 22px;
+
+  min-width: 0;
+
+  line-height: 58px;
+
+  background-color: #f2f2f2;
+  border: none;
+
+  &:hover {
+    background-color: $white-two;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid $white-two;
+  }
+
+  &--contacts {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.form__input-wrapper {
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 58px;
+
+    background-color: #e7e7e7;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--tel {
+    @include desktop {
+      width: initial;
+      flex-grow: 1;
+      margin-right: 80px;
+    }
+
+    &::after {
+      background-image: url("../img/icon-phone.svg");
+      background-size: 18px;
+    }
+  }
+
+  &--email {
+    @include desktop {
+      width: initial;
+      flex-grow: 1;
+    }
+
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+      background-size: 16px;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 7px;
+  }
+
+  @include desktop {
+    margin-left: 16px;
+  }
+}
+
+.form__title {
+  margin: 18px 0 20px;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin: 5px 0 59px;
+    font-size: 21px;
+  }
+
+  &--impression {
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      text-align: center;
+    }
+  }
+
+  &--introduce {
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &--contacts {
+    @include tablet {
+      margin-bottom: 28px;
+    }
+
+    @include desktop {
+      margin-bottom: 73px;
+    }
+  }
+
+  &--sights {
+    margin-bottom: 15px;
+
+    @include tablet {
+      width: 300px;
+      margin: 19px auto 11px;
+    }
+  }
+
+  &--emotions {
+    @include tablet {
+      margin: 23px 0 58px;
+    }
+  }
+}
+
+.form__contacts-span {
+  margin: 1px 21px 12px;
+
+  @include desktop {
+    margin: 0 0 3px;
+  }
+}
+
+.form__contacts-ad-span {
+  @include desktop {
+    display: none;
+  }
+}
+
+.form__radio-label {
+  position: relative;
+
+  display: block;
+  margin-bottom: 12px;
+  padding-left: 78px;
+
+  font-size: 18px;
+  line-height: 58px;
+  font-weight: bold;
+
+  &:last-child {
+    margin-bottom: 19px;
+  }
+
+  @include tablet {
+    margin: 20px 0;
+  }
+}
+
+.form__radio-label input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.form__radio-label input[type="radio"]:hover + .radio-indicator {
+  background-color: $white-two;
+}
+
+.form__radio-label input[type="radio"]:active + .radio-indicator {
+  background-color: #d5d5d5;
+}
+
+.form__radio-label input[type="radio"]:checked + .radio-indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 17px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.form__radio-label input[type="radio"]:checked:active + .radio-indicator::before {
+  background-color: #a5a5a6;
+}
+
+.form__checkbox-label {
+  position: relative;
+
+  display: block;
+  margin-bottom: 22px;
+
+  font-size: 18px;
+  line-height: 58px;
+  font-weight: bold;
+
+  padding-left: 79px;
+
+  &:nth-child(2) {
+    margin-right: 13px;
+  }
+
+  &:last-child {
+    margin-bottom: 18px;
+  }
+
+  @include tablet {
+    margin: 29px 0 1px;
+  }
+}
+
+.form__checkbox-label input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+
+  width: 55px;
+  height: 55px;
+
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+
+.form__checkbox-label input[type="checkbox"]:hover + .checkbox-indicator {
+  background-color: $white-two;
+}
+
+.form__checkbox-label input[type="checkbox"]:active + .checkbox-indicator {
+  background-color: #d5d5d5;
+}
+
+.form__checkbox-label input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: 14px;
+
+  width: 13px;
+  height: 4px;
+  transform: rotate(45deg);
+
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.form__checkbox-label input[type="checkbox"]:checked:active + .checkbox-indicator::after {
+  background-color: #a5a5a6;
+}
+
+.form__checkbox-label input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 26px;
+  left: 21px;
+
+  width: 21px;
+  height: 4px;
+  transform: rotate(-45deg);
+
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.form__checkbox-label input[type="checkbox"]:checked:active + .checkbox-indicator::before {
+  background-color: #a5a5a6;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 160px;
+  margin-bottom: 43px;
+  padding: 18px 21px;
+
+  background-color: #f2f2f2;
+  border: none;
+
+  &::placeholder {
+    font-weight: bold;
+    line-height: 21px;
+  }
+
+  @include tablet {
+    margin-bottom: 53px;
+  }
+}
+
+.form__btn-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 52px;
+  }
+}
+
+.form__btn {
+  width: 100%;
+  margin-bottom: 29px;
+  font-size: 21px;
+  line-height: 58px;
+  color: $white-three;
+  text-transform: uppercase;
+  background-color: $light-grey-blue;
+  border: none;
+
+  @include tablet {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.form__btn-span {
+  display: none;
+
+  @include tablet {
+    align-self: center;
+
+    display: initial;
+  }
+}

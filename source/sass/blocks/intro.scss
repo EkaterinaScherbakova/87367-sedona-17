@@ -1,0 +1,177 @@
+.intro__slogan {
+  position: relative;
+
+  height: 389px;
+
+  text-align: center;
+
+  background-color: #d6e7f0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablet {
+    height: 518px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @include desktop {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  &--gallery {
+    height: 156px;
+
+    background-position: center bottom;
+    background-size: initial;
+
+    @include tablet {
+      height: 290px;
+      background-size: cover;
+    }
+
+    @include desktop {
+      height: 300px;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.5px;
+
+    height: 26px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-size: cover;
+
+    @include tablet {
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    @include desktop {
+      height: 57px;
+
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+}
+
+.intro__img-slogan {
+  margin-top: 88px;
+
+  @include tablet {
+    width: 460px;
+    height: 350px;
+
+    margin-top: 79px;
+  }
+}
+
+.intro__img-sedona {
+  margin-top: 50px;
+
+  @include tablet {
+    width: 460px;
+    height: 80px;
+    margin-top: 95px;
+  }
+
+  @include desktop {
+    margin-top: 101px;
+  }
+}
+
+.intro__title-wrapper {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 40px 7.5%;
+
+  text-align: center;
+
+  @include tablet {
+    padding: 52px 10%;
+  }
+
+  @include desktop {
+    padding: 52px 7%;
+  }
+
+  &--gallery {
+    max-width: 600px;
+    padding-bottom: 28px;
+
+    @include tablet {
+      padding-top: 76px;
+      padding-bottom: 71px;
+    }
+
+    @include desktop {
+      padding-top: 114px;
+    }
+  }
+
+  &--form {
+    padding: 40px 7% 19px;
+
+    @include tablet {
+      padding: 74px 19% 19px;
+    }
+
+    @include desktop {
+      padding: 112px 12% 3px;
+    }
+  }
+}
+
+.intro__title {
+  margin: 0 0 27px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 21px;
+  }
+
+  &--gallery {
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--form {
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.intro__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  &--gallery,
+  &--form {
+    line-height: 23px;
+  }
+}

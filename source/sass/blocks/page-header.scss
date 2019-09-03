@@ -1,0 +1,28 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 102px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  @include tablet {
+    top: 0;
+  }
+
+  @include desktop {
+    width: 187px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
