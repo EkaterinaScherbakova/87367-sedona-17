@@ -18,7 +18,9 @@
 }
 
 .photo__item {
-  padding: 22px 0;
+  position: relative;
+  // padding: 22px 0;
+  padding: 22px calc(50% - 140px);
   border-top: 1px solid #e6e6e6;
 
   &:last-child {
@@ -44,34 +46,8 @@
   }
 }
 
-.photo__item-wrapper {
-  position: relative;
-
-  width: 280px;
-  margin: 0 auto;
-
-  @include tablet {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
-
 .photo__picture {
-  @include tablet {
-    display: block;
-    height: 267px;
-  }
-
-  @include desktop {
-    height: 268px;
-  }
-
-  &--one {
-    @include tablet {
-      height: 400px;
-    }
-  }
+  display: flex;
 }
 
 .photo__img {
@@ -134,7 +110,7 @@
 }
 
 .photo__title {
-  margin: 17px 0 7px;
+  margin: 21px 0 7px;
 
   font-size: inherit;
   text-transform: uppercase;

@@ -1,0 +1,16 @@
+.form-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form-field__label {
+  margin: 1px 21px 12px;
+
+  @include desktop {
+    margin: 0 0 3px;
+  }
+}
