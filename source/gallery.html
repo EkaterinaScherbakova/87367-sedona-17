@@ -22,17 +22,17 @@
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
-          <li class="main-nav__item-wrapper">
-            <a href="/" class="main-nav__item main-nav__item--active">Главная</a>
+          <li class="main-nav__item">
+            <a href="/">Главная</a>
           </li>
-          <li class="main-nav__item-wrapper">
-            <a class="main-nav__item">Фото и видео</a>
+          <li class="main-nav__item">
+            <a>Фото и видео</a>
           </li>
-          <li class="main-nav__item-wrapper">
-            <a href="form.html" class="main-nav__item">Форма отзыва</a>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="main-nav__item-wrapper">
-            <a href="#" class="main-nav__item">HTML Academy</a>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
           </li>
         </ul>
         <button type="button" class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
@@ -46,7 +46,7 @@
             <img src="img/text-sedona.svg" width="229" height="39" class="intro__img-sedona" alt="Седона">
           </picture>
         </div>
-        <div class="intro__title-wrapper intro__title-wrapper--gallery">
+        <div class="intro__inner intro__inner--gallery">
           <h1 class="intro__title intro__title--gallery">Фото и видео</h1>
           <p class="intro__desc intro__desc--gallery">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
@@ -55,121 +55,113 @@
         <h2 class="visually-hidden">Фото</h2>
         <ul class="photo__list">
           <li class="photo__item">
-            <div class="photo__item-wrapper">
-              <a>
-                <picture class="photo__picture photo__picture--one">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+            <a href="#">
+              <picture class="photo__picture photo__picture--one">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                  <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280"
-                  class="photo__img photo__img--one" alt="Неродные просторы">
-                </picture>
-              </a>
-              <div class="photo__desc">
-                <div class="photo__title-wrapper">
-                  <h3 class="photo__title">Неродные просторы</h3>
-                  <span class="photo__author">Автор фото: Борис</span>
-                </div>
-                <div class="photo__like">
-                  <button type="button" class="photo__btn">
-                    <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
-                      <use xlink:href="img/sprite.svg#icon-like"></use>
-                    </svg>
-                    <span>1350</span>
-                  </button>
-                </div>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280"
+                class="photo__img photo__img--one" alt="Неродные просторы">
+              </picture>
+            </a>
+            <div class="photo__desc">
+              <div>
+                <h3 class="photo__title">Неродные просторы</h3>
+                <span class="photo__author">Автор фото: Борис</span>
+              </div>
+              <div class="photo__like">
+                <button type="button" class="photo__btn">
+                  <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span>1350</span>
+                </button>
               </div>
             </div>
           </li>
           <li class="photo__item">
-            <div class="photo__item-wrapper">
-              <a>
-                <picture class="photo__picture">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+            <a href="#">
+              <picture class="photo__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                  <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280"
-                  class="photo__img" alt="Неродные просторы">
-                </picture>
-              </a>
-              <div class="photo__desc">
-                <div class="photo__title-wrapper">
-                  <h3 class="photo__title">Местная растительность</h3>
-                  <span class="photo__author">Автор фото: Сергей</span>
-                </div>
-                <div class="photo__like">
-                  <button type="button" class="photo__btn">
-                    <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
-                      <use xlink:href="img/sprite.svg#icon-like"></use>
-                    </svg>
-                    <span>143</span>
-                  </button>
-                </div>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280"
+                class="photo__img" alt="Неродные просторы">
+              </picture>
+            </a>
+            <div class="photo__desc">
+              <div>
+                <h3 class="photo__title">Местная растительность</h3>
+                <span class="photo__author">Автор фото: Сергей</span>
+              </div>
+              <div class="photo__like">
+                <button type="button" class="photo__btn">
+                  <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span>143</span>
+                </button>
               </div>
             </div>
           </li>
           <li class="photo__item">
-            <div class="photo__item-wrapper">
-              <a>
-                <picture class="photo__picture">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+            <a href="#">
+              <picture class="photo__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                  <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" class="photo__img" alt="Неродные просторы">
-                </picture>
-              </a>
-              <div class="photo__desc">
-                <div class="photo__title-wrapper">
-                  <h3 class="photo__title">Дорога на север</h3>
-                  <span class="photo__author">Автор фото: Петр</span>
-                </div>
-                  <div class="photo__like">
-                  <button type="button" class="photo__btn">
-                    <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
-                      <use xlink:href="img/sprite.svg#icon-like"></use>
-                    </svg>
-                    <span>96</span>
-                  </button>
-                </div>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" class="photo__img" alt="Неродные просторы">
+              </picture>
+            </a>
+            <div class="photo__desc">
+              <div>
+                <h3 class="photo__title">Дорога на север</h3>
+                <span class="photo__author">Автор фото: Петр</span>
+              </div>
+              <div class="photo__like">
+                <button type="button" class="photo__btn">
+                  <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span>96</span>
+                </button>
               </div>
             </div>
           </li>
           <li class="photo__item">
-            <div class="photo__item-wrapper">
-              <a>
-                <picture class="photo__picture">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+            <a href="#">
+              <picture class="photo__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280"
-                  class="photo__img" alt="Неродные просторы">
-                </picture>
-              </a>
-              <div class="photo__desc">
-                <div class="photo__title-wrapper">
-                  <h3 class="photo__title">Мост дьявола</h3>
-                  <span class="photo__author">Автор фото: Антон</span>
-                </div>
-                  <div class="photo__like">
-                  <button type="button" class="photo__btn">
-                    <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
-                      <use xlink:href="img/sprite.svg#icon-like"></use>
-                    </svg>
-                    <span>254</span>
-                  </button>
-                </div>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280"
+                class="photo__img" alt="Неродные просторы">
+              </picture>
+            </a>
+            <div class="photo__desc">
+              <div>
+                <h3 class="photo__title">Мост дьявола</h3>
+                <span class="photo__author">Автор фото: Антон</span>
+              </div>
+              <div class="photo__like">
+                <button type="button" class="photo__btn">
+                  <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span>254</span>
+                </button>
               </div>
             </div>
           </li>

@@ -43,7 +43,7 @@
   }
 }
 
-.main-nav__item-wrapper {
+.main-nav__item {
   //flex-grow: 1;
   @include tablet {
     width: 20%;
@@ -60,7 +60,7 @@
   }
 }
 
-.main-nav__item {
+.main-nav__item a {
   display: block;
 
   height: 56px;
