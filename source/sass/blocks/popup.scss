@@ -1,5 +1,6 @@
 .popup {
   position: fixed;
+  display: none;
   top: 50%;
   left: 0;
   right: 0;
@@ -12,9 +13,11 @@
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-  &--danger {
-    display: none;
+  &--show {
+    display: block;
+  }
 
+  &--danger {
     @include tablet {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
@@ -24,8 +27,6 @@
   }
 
   &--done {
-    // display: none;
-
     @include tablet {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
