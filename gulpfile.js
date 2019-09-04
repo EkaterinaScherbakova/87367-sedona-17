@@ -102,7 +102,6 @@ gulp.task("clean", function () {
 
 gulp.task("refresh", function () {
   server.reload();
-  done();
 })
 
 gulp.task("build", gulp.series("clean", "css", "js", "images", "sprite", "fonts", "html"));
