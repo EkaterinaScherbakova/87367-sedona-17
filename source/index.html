@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -58,6 +60,10 @@
         </div>
         <div class="reason__photo">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop1@1x.webp 1x, img/main-city-desktop1@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/main-city-desktop1@1x.jpg 1x, img/main-city-desktop1@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
             <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260"
@@ -67,15 +73,24 @@
       </section>
       <section class="features">
         <ul class="features__list">
-          <li class="features__item features__item--house">
+          <li class="features__item">
+            <svg width="37" height="36" viewBox="0 0 37 36" class="features__item-icon features__item-icon--house">
+              <use xlink:href="img/sprite.svg#icon-house"></use>
+            </svg>
             <h2 class="features__title">Жилье</h2>
             <p class="features__desk">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="features__item features__item--souvenirs">
+            <svg width="32" height="38" viewBox="0 0 32 38" class="features__item-icon features__item-icon--souvenirs">
+              <use xlink:href="img/sprite.svg#icon-gift"></use>
+            </svg>
             <h2 class="features__title">Сувениры</h2>
             <p class="features__desk">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="features__item features__item--food">
+          <li class="features__item">
+            <svg width="40" height="35" viewBox="0 0 40 35" class="features__item-icon features__item-icon--food">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
             <h2 class="features__title">Еда</h2>
             <p class="features__desk">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
@@ -89,12 +104,13 @@
         </div>
         <div class="reason__photo">
           <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
-            <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260"
-              alt="Мост Дьявола">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+            <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола">
           </picture>
         </div>
       </section>
@@ -123,7 +139,7 @@
         <a class="letsgo__btn">Найти гостиницу</a>
       </section>
       <section>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen></iframe>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=mymaps%3A-oxdwuDrzChEgyvEGVz8SIKMaFB5Lq2m&amp;source=constructor"></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -167,7 +183,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
