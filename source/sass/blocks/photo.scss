@@ -121,10 +121,13 @@
 }
 
 .photo__btn {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  width: 70px;
   height: 21px;
-  padding: 5px 5px 0 37px;
+  // padding: 5px 5px 0 37px;
 
   color: inherit;
   font-weight: bold;
@@ -139,12 +142,14 @@
   }
 }
 
-.photo__like-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+.photo__like-counter {
+  flex-grow: 1;
+}
 
+.photo__like-icon {
   fill: rgba(#000000, 0.3);
+
+  margin-top: -3px;
 
   @include desktop {
     fill: #ffffff;

@@ -5,7 +5,7 @@
   align-items: center;
 
   min-height: 233px;
-  padding-top: 37px;
+  padding-top: 36px;
   padding-bottom: 12px;
 
   @include tablet {
@@ -38,6 +38,10 @@
 
   &:last-child {
     margin-right: 0;
+
+    @include tablet {
+      margin-right: 7px;
+    }
   }
 }
 

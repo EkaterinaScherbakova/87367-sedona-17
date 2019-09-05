@@ -38,6 +38,18 @@
   &--souvenirs {
     order: 3;
   }
+
+  @include desktop {
+    padding: 142px 50px 47px;
+  }
+
+  br {
+    display: none;
+
+    @include tablet {
+      display: initial;
+    }
+  }
 }
 
 .features__item-icon {
@@ -112,4 +124,13 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: $almost-black;
+
+  br {
+    display: none;
+
+    @include tablet {
+      display: initial;
+    }
+  }
 }

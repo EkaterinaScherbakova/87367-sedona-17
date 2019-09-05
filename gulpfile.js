@@ -36,7 +36,8 @@ gulp.task("js", function () {
     .pipe(minify({
       ext:{
         min:'.min.js'
-      }
+      },
+      ignoreFiles: ['picturefill.min.js', 'svgxuse.min.js']
     }))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());

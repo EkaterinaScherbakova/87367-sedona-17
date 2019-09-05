@@ -105,15 +105,15 @@
   text-align: center;
 
   @include tablet {
-    padding: 52px 10%;
+    padding: 51px 10%;
   }
 
   @include desktop {
-    padding: 52px 7%;
+    padding: 51px 7%;
   }
 
   &--gallery {
-    max-width: 600px;
+    max-width: 599px;
     padding-bottom: 28px;
 
     @include tablet {
@@ -169,6 +169,7 @@
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  color: $almost-black;
 
   &--gallery,
   &--form {

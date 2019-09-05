@@ -85,14 +85,14 @@
               <use xlink:href="img/sprite.svg#icon-gift"></use>
             </svg>
             <h2 class="features__title">Сувениры</h2>
-            <p class="features__desk">Не только китайского, но и местного производства!</p>
+            <p class="features__desk">Не только китайского,<br>но и местного производства!</p>
           </li>
           <li class="features__item">
             <svg width="40" height="35" viewBox="0 0 40 35" class="features__item-icon features__item-icon--food">
               <use xlink:href="img/sprite.svg#icon-burger"></use>
             </svg>
             <h2 class="features__title">Еда</h2>
-            <p class="features__desk">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="features__desk">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
         </ul>
       </section>
@@ -100,7 +100,7 @@
         <div class="reason__desk">
           <h2 class="reason__title">Там есть <br>мост Дьявола</h2>
           <span class="reason__number">— №2 —</span>
-          <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <p class="reason__text">Да, по нему можно пройти!<br>Если вы осмелитесь, конечно</p>
         </div>
         <div class="reason__photo">
           <picture>
@@ -118,33 +118,32 @@
         <div class="reason__desk reason__desk--no-photo">
           <h2 class="reason__title">Небольшая<br>площадь</h2>
           <span class="reason__number">— №3 —</span>
-          <p class="reason__text">Все интересные места находятся очень близко</p>
+          <p class="reason__text reason__text--no-photo">Все интересные места находятся очень близко</p>
         </div>
-        <div class="reason__desk reason__desk--no-photo">
+        <div class="reason__desk reason__desk--4 reason__desk--no-photo">
           <h2 class="reason__title">Красивая<br>дорога</h2>
           <span class="reason__number">— №4 —</span>
-          <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="reason__text reason__text--no-photo">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
         </div>
         <div class="reason__desk reason__desk--no-photo">
           <h2 class="reason__title">Мало<br>туристов</h2>
           <span class="reason__number">— №5 —</span>
-          <p class="reason__text">Большинство едет в гранд каньон и толпится там</p>
+          <p class="reason__text reason__text--no-photo">Большинство едет в гранд каньон и толпится там</p>
         </div>
       </section>
       <section class="letsgo">
         <h2 class="letsgo__title">Заинтересовались?</h2>
-        <p class="letsgo__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        <p class="letsgo__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
           седоне
         </p>
         <a class="letsgo__btn">Найти гостиницу</a>
       </section>
-      <section>
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=mymaps%3A-oxdwuDrzChEgyvEGVz8SIKMaFB5Lq2m&amp;source=constructor"></iframe>
+      <section class="map">
+        <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=mymaps%3A-oxdwuDrzChEgyvEGVz8SIKMaFB5Lq2m&amp;source=constructor"></iframe>
       </section>
     </main>
     <footer class="page-footer">
       <span class="page-footer__hashtag">#visitsedona</span>
-      <div class="page-footer__socials">
         <ul class="page-footer__socials-list">
           <li class="page-footer__socials-item">
             <a class="page-footer__social">
@@ -171,10 +170,9 @@
             </a>
           </li>
         </ul>
-      </div>
       <div class="page-footer__dev">
         <span class="page-footer__dev-text">Разработано</span>
-        <a href="https://htmlacademy.ru" class="page-footer__dev-link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__dev-link">
           <svg width="27" height="34" viewBox="0 0 27 34" class="page-footer__dev-icon">
             <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
@@ -183,6 +181,8 @@
       </div>
     </footer>
   </div>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

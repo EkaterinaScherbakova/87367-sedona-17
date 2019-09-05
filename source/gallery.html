@@ -77,7 +77,7 @@
                   <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
-                  <span>1350</span>
+                  <span class="photo__like-counter">1350</span>
                 </button>
               </div>
             </div>
@@ -105,7 +105,7 @@
                   <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
-                  <span>143</span>
+                  <span class="photo__like-counter">143</span>
                 </button>
               </div>
             </div>
@@ -132,7 +132,7 @@
                   <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
-                  <span>96</span>
+                  <span class="photo__like-counter">96</span>
                 </button>
               </div>
             </div>
@@ -160,7 +160,7 @@
                   <svg width="23" height="21" viewBox="0 0 23 21" class="photo__like-icon">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
-                  <span>254</span>
+                  <span class="photo__like-counter">254</span>
                 </button>
               </div>
             </div>
@@ -173,18 +173,20 @@
         <div class="player suggestion__player">
           <div class="player__screen"></div>
           <div class="player__controls">
-            <button class="player__control player__control--replay">
+            <button type="button" class="player__control player__control--replay">
               <svg width="16" height="20">
                 <use xlink:href="img/sprite.svg#icon-video-replay"></use>
               </svg>
             </button>
-            <div class="player__progress-bar"></div>
-            <button class="player__control player__control--subtitles">
+            <div class="player__progress-bar">
+              <button type="button" class="player__progress-control"><span class="visually-hidden">видео-контроллер</span></button>
+            </div>
+            <button type="button" class="player__control player__control--subtitles">
               <svg width="32" height="20">
                 <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
               </svg>
             </button>
-            <button class="player__control player__control--fullscreen">
+            <button type="button" class="player__control player__control--fullscreen">
               <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
               </svg>
@@ -195,7 +197,6 @@
     </main>
     <footer class="page-footer">
       <span class="page-footer__hashtag">#visitsedona</span>
-      <div class="page-footer__socials">
         <ul class="page-footer__socials-list">
           <li class="page-footer__socials-item">
             <a class="page-footer__social">
@@ -222,10 +223,9 @@
             </a>
           </li>
         </ul>
-      </div>
       <div class="page-footer__dev">
         <span class="page-footer__dev-text">Разработано</span>
-        <a href="https://htmlacademy.ru" class="page-footer__dev-link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__dev-link">
           <svg width="27" height="34" viewBox="0 0 27 34" class="page-footer__dev-icon">
             <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
@@ -234,6 +234,8 @@
       </div>
     </footer>
   </div>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

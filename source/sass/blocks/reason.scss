@@ -53,7 +53,7 @@
 
   @include tablet {
     min-width: 256px;
-    padding: 46px 47px;
+    padding: 46px 47px 30px;
   }
 
   @include desktop {
@@ -63,7 +63,7 @@
   &--no-photo {
     position: relative;
 
-    padding: 27px 31px;
+    padding: 27px 31px 28px;
 
     color: #000000;
 
@@ -96,6 +96,12 @@
       }
     }
   }
+
+  &--4 {
+    @include tablet {
+      padding: 46px 50px;
+    }
+  }
 }
 
 .reason__title {
@@ -111,6 +117,8 @@
   }
 
   @include tablet {
+    margin-bottom: 9px;
+
     font-size: 21px;
 
     br {
@@ -130,6 +138,26 @@
 
   @include tablet {
     margin-top: 20px;
+  }
+
+  br {
+    display: none;
+
+    @include desktop {
+      display: initial;
+    }
+  }
+
+  &--no-photo {
+    color: $almost-black;
+
+    br {
+      display: none;
+
+      @include tablet {
+        display: initial;
+      }
+    }
   }
 }
 
