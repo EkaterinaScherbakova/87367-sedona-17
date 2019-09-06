@@ -11,6 +11,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @include tablet {
     height: 518px;
 

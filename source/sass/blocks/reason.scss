@@ -40,6 +40,12 @@
       flex-direction: row-reverse;
     }
   }
+
+  &--no-photo {
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .reason__desk {

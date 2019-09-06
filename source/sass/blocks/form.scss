@@ -116,7 +116,7 @@
     }
 
     @include desktop {
-      padding-bottom: 12px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -124,6 +124,7 @@
 .form__row {
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -371,6 +372,7 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 
     margin-bottom: 52px;
   }
